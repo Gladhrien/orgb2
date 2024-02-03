@@ -1,0 +1,17 @@
+config1:
+floatsqrt oplat 24 -> 14
+L1D size 32 -> 64
+L1I size 32 -> 64
+L2 size 256 -> 512
+
+config2:
+floatsqrt oplat 24 -> 24
+L1D size 32 -> 128
+L1I size 32 -> 128
+L2 size 256 -> 1024
+
+config3:
+floatsqrt oplat 24 -> 48
+L1D size 32 -> 256
+L1I size 32 -> 256
+L2 size 256 -> 2048
