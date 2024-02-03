@@ -1,6 +1,6 @@
 import random
 
-quantity_of_numbers = 100000;
+quantity_of_numbers = 2000;
 start_number = 1;
 end_number = quantity_of_numbers + start_number;
 
