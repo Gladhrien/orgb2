@@ -67,8 +67,8 @@ class MyIntMultDiv(FUDesc):
     count = 1
 
 class My_FP_ALU(FUDesc):
-    opList = [ OpDesc(opClass='FloatAdd', opLat=2),
-               OpDesc(opClass='FloatCmp', opLat=20),
+    opList = [ OpDesc(opClass='FloatAdd', opLat=200),
+               OpDesc(opClass='FloatCmp', opLat=2),
                OpDesc(opClass='FloatCvt', opLat=2) ]
     count = 1
 
