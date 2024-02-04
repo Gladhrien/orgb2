@@ -1,6 +1,6 @@
 import random
 
-quantity_of_numbers = 2050
+quantity_of_numbers = 2010
 start_number = 1.0
 end_number = 10.0  # Define the upper limit for the random floats
 step = (end_number - start_number) / quantity_of_numbers  # Calculate step to generate unique floats
