@@ -51,9 +51,9 @@ int main() {
     int n = sizeof(arr) / sizeof(arr[0]);
 
     quickSort(arr, 0, n - 1);
-    printf("Sorted Array: ");
-    for (int i = 0; i < n; i++) {
-        printf("%.2f ", arr[i]);
-    }
+    // printf("Sorted Array: ");
+    // for (int i = 0; i < n; i++) {
+    //     printf("%.2f ", arr[i]);
+    // }
     return 0;
 }
