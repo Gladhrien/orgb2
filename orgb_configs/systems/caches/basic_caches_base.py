@@ -15,7 +15,7 @@ class BasicL1ICache(Cache):
     assoc = 8
     tag_latency = 1
     data_latency = 1
-    response_latency = 1
+    response_latency = 20
     mshrs = 4
     tgts_per_mshr = 16
 
@@ -29,7 +29,7 @@ class BasicL1DCache(Cache):
     assoc = 8
     tag_latency = 1
     data_latency = 2
-    response_latency = 2
+    response_latency = 20
     mshrs = 4
     tgts_per_mshr = 16
 
@@ -45,7 +45,7 @@ class BasicL2Cache(Cache):
     assoc = 8
     tag_latency = 8
     data_latency = 12
-    response_latency = 4
+    response_latency = 40
     mshrs = 16
     tgts_per_mshr = 16
 
@@ -60,7 +60,7 @@ class BasicL3Cache(Cache):
     assoc = 16
     tag_latency = 12
     data_latency = 36
-    response_latency = 4
+    response_latency = 50
     mshrs = 16
     tgts_per_mshr = 16
 
