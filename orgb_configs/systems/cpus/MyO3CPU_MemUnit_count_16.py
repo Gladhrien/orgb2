@@ -51,7 +51,7 @@ from m5.objects import SystemXBar
 
 class MyIntALU(FUDesc):
     opList = [ OpDesc(opClass='IntAlu') ]
-    count = 32
+    count = 2
 
 class MyIntMultDiv(FUDesc):
     opList = [ OpDesc(opClass='IntMult', opLat=3, pipelined=True),
@@ -105,7 +105,7 @@ class MyMemUnit(FUDesc):
     opList = [ OpDesc(opClass='MemRead'),
                OpDesc(opClass='MemWrite'),
                OpDesc(opClass='IprAccess', opLat = 2, pipelined = False) ]
-    count = 1
+    count = 16
 
 class MyFUPool(FUPool):
     FUList = [ MyIntALU(), MyIntMultDiv(), My_FP_ALU(),
