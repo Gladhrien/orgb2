@@ -70,7 +70,7 @@ class My_FP_ALU(FUDesc):
     opList = [ OpDesc(opClass='FloatAdd', opLat=2),
                OpDesc(opClass='FloatCmp', opLat=2),
                OpDesc(opClass='FloatCvt', opLat=2) ]
-    count = 1
+    count = 128
 
 class My_FP_MultDiv(FUDesc):
     opList = [ OpDesc(opClass='FloatMult', opLat=4),
@@ -105,7 +105,7 @@ class MyMemUnit(FUDesc):
     opList = [ OpDesc(opClass='MemRead'),
                OpDesc(opClass='MemWrite'),
                OpDesc(opClass='IprAccess', opLat = 2, pipelined = False) ]
-    count = 8
+    count = 1
 
 class MyFUPool(FUPool):
     FUList = [ MyIntALU(), MyIntMultDiv(), My_FP_ALU(),
