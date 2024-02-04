@@ -1,13 +1,17 @@
 Busca binária:
 config_original: L1D assoc 8
+config_original: L1I assoc 8
 config1: L1D assoc 1
-config2: L1D assoc 16
+config1: L1I assoc 1
+config2: L1D assoc 4
+config2: L1I assoc 4
 config3: L1D assoc 32
+config3: L1I assoc 32
 
 Quicksort:
 config_base: L1D size 16kB
-config1: L1D size 32kB
-config2: L1D size 128kB
+config1: L1D size 2kB
+config2: L1D size 32kB
 config3: L1D size 512kB
 
 Quicksort:
@@ -23,8 +27,16 @@ config_base: L1I size 32kB
 config_base: L2 size 256kB
 config_base: L3 size 2MB
 config_base: opClass='FloatAdd', opLat=2
+config_base: L1I response_latency: 1
+config_base: L1D response_latency: 2
+config_base: L2 response_latency: 4
+config_base: L3 response_latency: 4
 
 config_base
 config_base: L1D size 16kB
 config_base: L1I size 16kB
 config_base: L3 size 1MB
+config_base: L1I response_latency: 20
+config_base: L1D response_latency: 20
+config_base: L2 response_latency: 40
+config_base: L3 response_latency: 50
